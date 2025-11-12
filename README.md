@@ -21,13 +21,13 @@ import { parse, serialize, validate } from 'matter-yaml';
 // Example content with YAML front matter
 const text = `---
 title: "My Document"
-author: "Alex Stevovich"
+author: "John Smith"
 ---
 This is the content of the document.`;
 
 // Parse front matter and content
 const { data, content } = parse(text);
-console.log(data); // { title: "My Document", author: "Alex Stevovich" }
+console.log(data); // { title: "My Document", author: "John Smith" }
 console.log(content); // "This is the content of the document."
 
 // Serialize data and content back into front matter format
