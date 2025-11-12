@@ -1,6 +1,6 @@
 {
     "name": "matter-yaml",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "homepage": "https://alexstevovich.com/a/matter-yaml-nodejs",
     "author": {
         "name": "Alex Stevovich",
@@ -24,7 +24,7 @@
     },
     "keywords": [
         "front matter",
-        "JSON",
+        "YAML",
         "serialization",
         "parsing",
         "markdown",
