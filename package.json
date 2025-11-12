@@ -1,0 +1,44 @@
+{
+    "name": "matter-yaml",
+    "version": "2.0.0",
+    "homepage": "https://alexstevovich.com/a/matter-yaml-nodejs",
+    "author": {
+        "name": "Alex Stevovich",
+        "email": "dev@alexstevovich.com",
+        "url": "https://alexstevovich.com"
+    },
+    "description": "Parses and serializes YAML front matter in text documents.",
+    "type": "module",
+    "main": "./src/index.js",
+    "files": [
+        "./src"
+    ],
+    "license": "Apache-2.0",
+    "scripts": {
+        "poshify": "npx poshify",
+        "pretty": "npx prettier --write .",
+        "lint": "eslint ./src/",
+        "lint:fix": "eslint --fix ./src/",
+        "test": "npx vitest --run",
+        "build": "npm run poshify && npm run pretty && npm run lint:fix && npm run lint"
+    },
+    "keywords": [
+        "front matter",
+        "JSON",
+        "serialization",
+        "parsing",
+        "markdown",
+        "text processing"
+    ],
+    "dependencies": {
+        "js-yaml": "^4.1.1"
+    },
+    "devDependencies": {
+        "eslint": "^9.36.0",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-prettier": "^5.5.4",
+        "poshify": "^1.0.0",
+        "prettier": "^3.6.2",
+        "vitest": "^3.2.4"
+    }
+}
